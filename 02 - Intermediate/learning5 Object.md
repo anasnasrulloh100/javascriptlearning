@@ -599,6 +599,33 @@ const updated2 = updateField(produk, "stok", 10);
 console.log(updated2); // { id:1, nama:"Laptop", harga:15000000, stok:10 }
 
 
+// = vs === vs .includes()
+
+// ❌ = → ASSIGNMENT (ubah nilai)
+m.genre = "drama"
+// Artinya: "Set genre menjadi drama"
+// MERUSAK data asli!
+
+// ✅ === → COMPARISON (bandingkan nilai)
+m.genre === "drama"
+// Artinya: "Apakah genre sama dengan drama?"
+// Tapi genre adalah ARRAY, bukan string!
+// ["drama", "thriller"] === "drama" → false!
+
+// ✅ .includes() → CEK KEBERADAAN dalam array
+m.genre.includes("drama")
+// Artinya: "Apakah array genre mengandung 'drama'?"
+// ["drama", "thriller"].includes("drama") → true! ✅
+
+// RULE:
+// String   → gunakan ===
+// Array    → gunakan .includes()
+// Object   → gunakan "key" in obj atau obj.key !== undefined
+
+
+
+
+
 //======================
 // L A T I H A N
 //=======================
