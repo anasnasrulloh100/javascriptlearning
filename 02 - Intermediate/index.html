@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar DOM</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .highlight { background: yellow; }
+    .hidden { display: none; }
+    .active { color: green; font-weight: bold; }
+    button { padding: 8px 16px; cursor: pointer; margin: 4px; }
+    input { padding: 8px; margin: 4px; border: 1px solid #ccc; }
+    .card {
+      border: 1px solid #ddd;
+      padding: 16px;
+      margin: 8px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="judul">Belajar DOM Manipulation</h1>
+  <p id="deskripsi">Ini adalah paragraf pertama</p>
+  <p id="paragraf2">Ini adalah paragraf kedua</p>
+
+  <div id="container"></div>
+
+  <input type="text" id="inputNama" placeholder="Masukkan nama...">
+  <button id="btnSapa">Sapa!</button>
+
+  <div id="output"></div>
+
+  <!-- Script selalu di BAWAH body! -->
+  <script src="dom.js"></script>
+</body>
+</html>
