@@ -13,3 +13,4 @@ console.log(paragraf2);
 console.log(paragraf);
 console.log(container);
 console.log(form);
+navigator

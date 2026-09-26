@@ -448,3 +448,35 @@ document.querySelector("#container").addEventListener("click", (e) => {
 
 // Jalankan saat halaman load
 loadUsers();
+
+//==========================
+// RINGKASAN SESI 7
+//==========================
+
+YANG SUDAH DIPELAJARI:
+
+SELECTING:
+✅ getElementById()
+✅ querySelector()
+✅ querySelectorAll()
+
+MANIPULATING:
+✅ textContent vs innerHTML
+✅ setAttribute / getAttribute
+✅ classList (add/remove/toggle/contains)
+✅ createElement & appendChild
+✅ insertAdjacentHTML
+✅ element.remove()
+
+EVENTS:
+✅ addEventListener
+✅ Event types (click, input, submit, keydown)
+✅ Event object (e.target, e.preventDefault)
+✅ Event delegation ⭐
+
+POLA INDUSTRI:
+✅ Render list dengan map + join("")
+✅ Loading state di DOM
+✅ Fetch → Render ke DOM
+✅ State management sederhana
+✅ data-* attributes

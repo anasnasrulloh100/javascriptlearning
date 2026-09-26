@@ -1,0 +1,70 @@
+<!-- Buat file: latihan7.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan DOM</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .card { background: white; border-radius: 8px; padding: 16px; margin: 8px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    #count {transition: color 1s}
+    #count.positive {color: green}
+    .btn { padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin: 4px; }
+    #todoList { margin-left: -24px; list-style: none; }
+
+    #todoList span.done { text-decoration: line-through}
+    .btn-primary { background: #007bff; color: white; }
+    .btn-danger  { background: #dc3545; color: white; }
+    .btn-success { background: #28a745; color: white; }
+    input { padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 100%; margin: 4px 0; }
+    .error { border-color: red; }
+    .hidden { display: none; }
+    #loading { text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- SOAL 1: Counter -->
+    <div class="card">
+      <h2>Counter App</h2>
+      <h3 id="count">0</h3>
+      <button class="btn btn-primary" id="btnTambah">+ Tambah</button>
+      <button class="btn btn-danger"  id="btnKurang">- Kurang</button>
+      <button class="btn"             id="btnReset">Reset</button>
+    </div>
+
+    <!-- SOAL 2: Form -->
+    <div class="card">
+      <h2>Form Input</h2>
+      <input type="text"  id="inputNama"  placeholder="Nama lengkap...">
+      <input type="email" id="inputEmail" placeholder="Email...">
+      <input type="number" id="inputUmur" placeholder="Umur...">
+      <button class="btn btn-success" id="btnSubmit">Submit</button>
+      <div id="formOutput"></div>
+    </div>
+
+    <!-- SOAL 3: Todo List -->
+    <div class="card">
+      <h2>Todo List</h2>
+      <input type="text" id="inputTodo" placeholder="Tambah todo baru...">
+      <button class="btn btn-primary" id="btnAddTodo">Tambah</button>
+      <ul id="todoList"></ul>
+      <p id="todoCount">0 todo tersisa</p>
+    </div>
+
+    <!-- SOAL 4: User List dari API -->
+    <div class="card">
+      <h2>User List</h2>
+      <input type="text" id="searchUser" placeholder="Cari user...">
+      <button class="btn btn-primary" id="btnLoad">Load Users</button>
+      <div id="loading" class="hidden">⏳ Memuat...</div>
+      <div id="userContainer"></div>
+    </div>
+
+  </div>
+  <script src="latihan7.js"></script>
+</body>
+</html>
